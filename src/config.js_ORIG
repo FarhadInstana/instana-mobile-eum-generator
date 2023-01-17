@@ -1,0 +1,29 @@
+module.exports = {
+  numberOfConcurrentUsers: 1,
+  reportingTargets: {
+    // demo-eu-cluster
+    eu: {
+      'https://eum-blue-saas.instana.io/mobile': ['es6xLJX0SR6alQLut94LtA']
+    },
+    // demo-us-cluster
+    us: {
+      // demous
+      'https://eum-red-saas.instana.io/mobile': ['Sk1nfmctSSSkgNSVcb7g7g'],
+      // partner
+      'https://eum-blue-saas.instana.io/mobile': ['yfnZ4kWESD-VkepWLvCQhQ'],
+      // IBM demo
+      'https://eum-orange-saas.instana.io/mobile': ['7wC-tNPbRxSyyQCVC_n4pw']
+    },
+    // k8s-demo-cluster
+    k8s: {
+      'https://eum-red-saas.instana.io/mobile': ['yn3_i6oLSeS29pPixhHgxQ'],
+      'https://eum-magenta-saas.instana.rocks/mobile': ['_sxWPDpNR_2hWuhDPd_zAQ']
+    },
+    marketingtemp: {
+      'https://eum-blue-saas.instana.io/mobile': ['uRonPuVRR5Sqd5DhJxSt3g']
+    }
+  },
+  services: {
+    shop: `http://web.robot-shop:8080`
+  }
+};

@@ -1,0 +1,35 @@
+{
+  "name": "eum-mobile-app",
+  "version": "2.0.1",
+  "description": "Simulates mobile app monitoring end users",
+  "keywords": [
+    "caller",
+    "mobile app monitoring",
+    "demo load"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 node .",
+    "dev-local-shop-frontend": "SHOP_FRONTEND_SERVICE_HOST=127.0.0.1 SHOP_FRONTEND_SERVICE_PORT=4001 npm start",
+    "test": "eslint src/",
+    "reformat": "prettier --single-quote --write src/**/*"
+  },
+  "author": "Ben Ripkens <bripkens@gmail.com> (http://bripkens.de/)",
+  "license": "MIT",
+  "dependencies": {
+    "@instana/collector": "latest",
+    "lodash": "^4.17.11",
+    "node-fetch": "^2.6.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "prettier": "^1.10.2"
+  }
+}
